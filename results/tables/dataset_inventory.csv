@@ -1,0 +1,9 @@
+,path,size_mb,row_count,columns,status
+patients,data/extracted/patients.csv,0.0,60,"['subject_id', 'gender', 'anchor_age', 'anchor_year', 'anchor_year_group', 'dod']",AVAILABLE
+admissions,data/extracted/admissions.csv,0.01,60,"['subject_id', 'hadm_id', 'admittime', 'dischtime', 'deathtime', 'admission_type', 'admission_location', 'discharge_location', 'insurance', 'language', 'marital_status', 'race']",AVAILABLE
+d_labitems,data/extracted/d_labitems.csv,0.0,13,"['itemid', 'label', 'fluid', 'category', 'loinc_code']",AVAILABLE
+labevents,data/extracted/labevents.csv,0.28,3916,"['labevent_id', 'subject_id', 'hadm_id', 'itemid', 'charttime', 'value', 'valuenum', 'valueuom', 'flag']",AVAILABLE
+prescriptions,data/extracted/prescriptions.csv,0.02,169,"['subject_id', 'hadm_id', 'pharmacy_id', 'starttime', 'stoptime', 'drug', 'dose_val_rx', 'dose_unit_rx', 'route']",AVAILABLE
+diagnoses_icd,data/extracted/diagnoses_icd.csv,0.0,100,"['subject_id', 'hadm_id', 'seq_num', 'icd_code', 'icd_version']",AVAILABLE
+icustays,data/extracted/icustays.csv,0.01,60,"['subject_id', 'hadm_id', 'stay_id', 'first_careunit', 'last_careunit', 'intime', 'outtime', 'los']",AVAILABLE
+chartevents,data/extracted/chartevents.csv,0.46,7476,"['subject_id', 'hadm_id', 'stay_id', 'charttime', 'itemid', 'valuenum', 'valueuom']",AVAILABLE

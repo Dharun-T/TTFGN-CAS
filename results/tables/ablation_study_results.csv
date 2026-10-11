@@ -1,0 +1,8 @@
+Experiment,Architecture / Variant,Description,ROC-AUC,PR-AUC,F1-Score,Brier Score,ECE,Recall,Precision
+Exp_A,Lab-Only Trajectory,Prior lab trend features only; zero clinical context,0.5942,0.199,0.2374,0.2315,0.3283,0.3562,0.1781
+Exp_B,Clinical-Context-Only,"Comorbidities, active meds, and vitals only; zero lab history",0.5392,0.1831,0.1772,0.2287,0.3237,0.1918,0.1647
+Exp_C,Standard Lab + Context MLP,"Simple concatenation without decay, tensor fusion, or gating",0.5392,0.1831,0.1772,0.2287,0.3237,0.1918,0.1647
+Exp_D,T-TFGN w/o Time-Decay,Full architecture with learnable recency decay gamma disabled,0.5782,0.2005,0.1985,0.2289,0.3259,0.1781,0.2241
+Exp_E,T-TFGN w/o Tensor Fusion,Full architecture with bilinear cross-modal interactions disabled,0.5309,0.188,0.1867,0.2317,0.3279,0.1918,0.1818
+Exp_F,T-TFGN w/o Adaptive Gating,Full architecture with adaptive convex gating disabled,0.5562,0.179,0.0899,0.223,0.3155,0.0548,0.25
+Exp_G,Full Proposed T-TFGN,Proposed complete architecture with all modules active,0.5034,0.1616,0.1935,0.2376,0.3303,0.2877,0.1458

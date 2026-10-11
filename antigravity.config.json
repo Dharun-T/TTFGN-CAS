@@ -1,0 +1,30 @@
+{
+  "project": "T-TFGN Clinical Actionability Intelligence Platform",
+  "version": "2.2.0",
+  "engine": "antigravity",
+  "runtime": {
+    "node": ">=18.0.0",
+    "python": ">=3.10.0"
+  },
+  "targets": {
+    "web": {
+      "command": "npm run dev",
+      "port": 3000,
+      "type": "frontend"
+    },
+    "pipeline": {
+      "command": "python3 scripts/run_all.py",
+      "type": "ml-pipeline"
+    },
+    "test": {
+      "command": "python3 -m unittest discover tests -v",
+      "type": "unit-tests"
+    }
+  },
+  "metadata": {
+    "domain": "Critical Care Medicine & Clinical Decision Support",
+    "dataset": "MIMIC-IV v2.2",
+    "architecture": "Time-Decay Tensor Fusion Gated Network (T-TFGN)",
+    "temporalLeakageGuarantees": "Strict t_pred <= t_lab - 30m Cutoff Enforced"
+  }
+}

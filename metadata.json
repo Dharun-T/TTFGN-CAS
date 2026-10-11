@@ -1,0 +1,6 @@
+{
+  "name": "T-TFGN Clinical Actionability Research Platform",
+  "description": "Time-Decay Tensor Fusion Gated Network for Predicting Downstream Clinical Actionability of Next Laboratory Reports in MIMIC-IV",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

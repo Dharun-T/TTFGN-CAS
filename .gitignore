@@ -1,0 +1,29 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Environments
+venv/
+env/
+.venv/
+ENV/
+
+# Jupyter & IDE
+.ipynb_checkpoints
+.vscode/
+.idea/
+
+# Node / Web UI
+node_modules/
+dist/
+build/
+.npm
+
+# Large data files
+data/raw/*.zip
+data/raw/*.csv
+*.tar.gz
+*.log

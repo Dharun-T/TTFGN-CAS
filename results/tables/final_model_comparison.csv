@@ -1,0 +1,6 @@
+Model,Role,ROC-AUC,PR-AUC,F1-Score,Brier Score,ECE,Accuracy,Recall,Precision
+Random Forest (Lab-Only),Baseline / Comparator,0.5648 [0.494-0.636],0.1960 [0.141-0.272],0.1404 [0.057-0.234],0.1783,0.2156,0.8056,0.1096,0.1951
+Logistic Regression,Baseline / Comparator,0.5280 [0.448-0.604],0.1534 [0.120-0.207],0.0000 [0.000-0.000],0.1276,0.0237,0.8532,0.0000,0.0000
+Random Forest,Baseline / Comparator,0.5288 [0.454-0.598],0.1753 [0.133-0.251],0.0488 [0.000-0.118],0.1265,0.0248,0.8452,0.0274,0.2222
+Gradient Boosting (XGBoost),Baseline / Comparator,0.5424 [0.465-0.617],0.1833 [0.136-0.263],0.0000 [0.000-0.000],0.1241,0.0192,0.8492,0.0000,0.0000
+T-TFGN (Proposed),Proposed Research Model,0.5034 [0.435-0.581],0.1616 [0.124-0.230],0.1935 [0.130-0.264],0.2376,0.3303,0.6528,0.2877,0.1458

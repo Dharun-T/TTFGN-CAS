@@ -1,0 +1,6 @@
+Analyte,Total Reports,Actionable Reports,Empirical Action Rate,ROC-AUC,PR-AUC,F1-Score,Precision,Recall,Brier Score,ECE
+Glucose,100,15,0.15,0.6314,0.233,0.2667,0.2667,0.2667,0.2116,0.296
+Creatinine,103,11,0.1068,0.3883,0.0889,0.0,0.0,0.0,0.241,0.3765
+Potassium,102,20,0.1961,0.4335,0.2485,0.2105,0.1622,0.3,0.2384,0.274
+Sodium,97,9,0.0928,0.5139,0.115,0.2,0.1818,0.2222,0.215,0.3544
+Hemoglobin,102,18,0.1765,0.5093,0.206,0.2338,0.1525,0.5,0.2804,0.3506

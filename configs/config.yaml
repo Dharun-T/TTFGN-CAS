@@ -1,0 +1,91 @@
+# T-TFGN Research Platform Configuration
+# Time-Decay Tensor Fusion Gated Network for Predicting Clinical Actionability of Next Laboratory Reports
+
+project:
+  name: "T-TFGN-Clinical-Actionability"
+  version: "1.0.0"
+  description: "Time-Decay Tensor Fusion Gated Network for Predicting Downstream Clinical Actionability of Upcoming Lab Reports in MIMIC-IV"
+  seed: 42
+
+paths:
+  data_dir: "data"
+  raw_dir: "data/raw"
+  extracted_dir: "data/extracted"
+  interim_dir: "data/interim"
+  processed_dir: "data/processed"
+  features_dir: "data/features"
+  models_dir: "models"
+  results_dir: "results"
+  reports_dir: "reports"
+
+mimic:
+  dataset_version: "mimic-iv-2.2"
+  mimic_zip_candidates:
+    - "data/mimic_iv.zip"
+    - "data/mimic-iv.zip"
+    - "data/mimic-iv-clinical-database-demo-2.2.zip"
+    - "mimic_iv.zip"
+    - "mimic-iv.zip"
+
+temporal_windows:
+  # Lookback window for retrospective patient trajectory prior to prediction point
+  lookback_hours: 48
+  # Minimum time required before upcoming test to issue prediction (t_prediction <= t_lab - lead_time)
+  min_lead_time_minutes: 30
+  # Post-test observation window to assess qualifying downstream clinical actions
+  action_window_hours: 12
+  # Sensitivity analysis windows tested
+  sensitivity_action_windows_hours: [6, 12, 24]
+
+cohort_criteria:
+  min_age: 18
+  min_icu_los_hours: 24
+  min_prior_labs_in_lookback: 2
+  require_icu_stay: true
+
+target_analytes:
+  - "glucose"
+  - "creatinine"
+  - "potassium"
+  - "sodium"
+  - "hemoglobin"
+
+actionability_definitions:
+  # Downstream clinical actions monitored within post-test window
+  categories:
+    medication_modification:
+      description: "Initiation, titration, dose adjustment, or discontinuation of relevant medications"
+      enabled: true
+    diagnostic_intervention:
+      description: "Urgent repeat testing, blood gas, imaging, ECG, or complementary electrolyte order"
+      enabled: true
+    clinical_order_monitoring:
+      description: "Infusion adjustment, telemetry escalation, or fluid protocol alteration"
+      enabled: true
+
+model:
+  name: "T-TFGN"
+  analyte_dim: 16
+  lab_feature_dim: 11
+  context_dim: 32
+  hidden_dim: 64
+  tensor_fusion_rank: 16
+  dropout: 0.2
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  batch_size: 64
+  max_epochs: 50
+  patience: 7
+  loss_type: "bce_with_logits"  # Alternatives: focal_loss, weighted_bce
+
+cas_bands:
+  low_max: 0.40
+  medium_max: 0.75
+  # High is >= 0.75
+
+evaluation:
+  test_size: 0.20
+  val_size: 0.15
+  split_strategy: "patient_level" # Prevents patient leakage across train/val/test
+  bootstrap_iterations: 1000
+  bootstrap_alpha: 0.05

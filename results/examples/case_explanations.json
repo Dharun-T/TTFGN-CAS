@@ -1,0 +1,506 @@
+[
+  {
+    "patient_id": "PATIENT-10000048",
+    "analyte": "Hemoglobin",
+    "quadrant": "True Positive",
+    "cas": 0.2352,
+    "band": "LOW",
+    "time_decay_factor": 0.736,
+    "gate_lab_weight": 0.538,
+    "gate_context_weight": 0.462,
+    "cross_modal_synergy": 0.42,
+    "top_positive_factors": [
+      {
+        "feature": "med_insulin",
+        "attribution": 0.0374,
+        "abs_impact": 0.037407711148262024,
+        "direction": "positive"
+      },
+      {
+        "feature": "mean_arterial_pressure_last",
+        "attribution": 0.0244,
+        "abs_impact": 0.024437978863716125,
+        "direction": "positive"
+      },
+      {
+        "feature": "diag_heart_failure",
+        "attribution": 0.0178,
+        "abs_impact": 0.017757080495357513,
+        "direction": "positive"
+      },
+      {
+        "feature": "time_since_last_meas_hrs",
+        "attribution": 0.0161,
+        "abs_impact": 0.01608886569738388,
+        "direction": "positive"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "recent_max",
+        "attribution": -0.0316,
+        "abs_impact": 0.031635452061891556,
+        "direction": "negative"
+      },
+      {
+        "feature": "prev_val",
+        "attribution": -0.0308,
+        "abs_impact": 0.03082556091248989,
+        "direction": "negative"
+      },
+      {
+        "feature": "heart_rate_trend",
+        "attribution": -0.0278,
+        "abs_impact": 0.027807950973510742,
+        "direction": "negative"
+      },
+      {
+        "feature": "recent_mean",
+        "attribution": -0.0274,
+        "abs_impact": 0.02743135392665863,
+        "direction": "negative"
+      }
+    ]
+  },
+  {
+    "patient_id": "PATIENT-10000048",
+    "analyte": "Hemoglobin",
+    "quadrant": "True Positive",
+    "cas": 0.2352,
+    "band": "LOW",
+    "time_decay_factor": 0.736,
+    "gate_lab_weight": 0.538,
+    "gate_context_weight": 0.462,
+    "cross_modal_synergy": 0.42,
+    "top_positive_factors": [
+      {
+        "feature": "med_insulin",
+        "attribution": 0.0374,
+        "abs_impact": 0.037407711148262024,
+        "direction": "positive"
+      },
+      {
+        "feature": "mean_arterial_pressure_last",
+        "attribution": 0.0244,
+        "abs_impact": 0.024437978863716125,
+        "direction": "positive"
+      },
+      {
+        "feature": "diag_heart_failure",
+        "attribution": 0.0178,
+        "abs_impact": 0.017757080495357513,
+        "direction": "positive"
+      },
+      {
+        "feature": "time_since_last_meas_hrs",
+        "attribution": 0.0161,
+        "abs_impact": 0.01608886569738388,
+        "direction": "positive"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "recent_max",
+        "attribution": -0.0316,
+        "abs_impact": 0.031635452061891556,
+        "direction": "negative"
+      },
+      {
+        "feature": "prev_val",
+        "attribution": -0.0308,
+        "abs_impact": 0.03082556091248989,
+        "direction": "negative"
+      },
+      {
+        "feature": "heart_rate_trend",
+        "attribution": -0.0278,
+        "abs_impact": 0.027807950973510742,
+        "direction": "negative"
+      },
+      {
+        "feature": "recent_mean",
+        "attribution": -0.0274,
+        "abs_impact": 0.02743135392665863,
+        "direction": "negative"
+      }
+    ]
+  },
+  {
+    "patient_id": "PATIENT-10000041",
+    "analyte": "Hemoglobin",
+    "quadrant": "True Positive",
+    "cas": 0.8972,
+    "band": "HIGH",
+    "time_decay_factor": 0.741,
+    "gate_lab_weight": 0.571,
+    "gate_context_weight": 0.429,
+    "cross_modal_synergy": 0.479,
+    "top_positive_factors": [
+      {
+        "feature": "time_since_last_meas_hrs",
+        "attribution": 0.1291,
+        "abs_impact": 0.12912733852863312,
+        "direction": "positive"
+      },
+      {
+        "feature": "meas_count",
+        "attribution": 0.069,
+        "abs_impact": 0.06900230795145035,
+        "direction": "positive"
+      },
+      {
+        "feature": "diag_heart_failure",
+        "attribution": 0.0414,
+        "abs_impact": 0.04140527546405792,
+        "direction": "positive"
+      },
+      {
+        "feature": "spo2_last",
+        "attribution": 0.0334,
+        "abs_impact": 0.03335174173116684,
+        "direction": "positive"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "recent_mean",
+        "attribution": -0.179,
+        "abs_impact": 0.17902979254722595,
+        "direction": "negative"
+      },
+      {
+        "feature": "prev_val",
+        "attribution": -0.1692,
+        "abs_impact": 0.1691954880952835,
+        "direction": "negative"
+      },
+      {
+        "feature": "current_prev_val",
+        "attribution": -0.1221,
+        "abs_impact": 0.12205249071121216,
+        "direction": "negative"
+      },
+      {
+        "feature": "recent_max",
+        "attribution": -0.114,
+        "abs_impact": 0.113960862159729,
+        "direction": "negative"
+      }
+    ]
+  },
+  {
+    "patient_id": "PATIENT-10000033",
+    "analyte": "Hemoglobin",
+    "quadrant": "True Negative",
+    "cas": 0.2614,
+    "band": "LOW",
+    "time_decay_factor": 0.741,
+    "gate_lab_weight": 0.52,
+    "gate_context_weight": 0.48,
+    "cross_modal_synergy": 0.464,
+    "top_positive_factors": [
+      {
+        "feature": "diag_renal_disease",
+        "attribution": 0.303,
+        "abs_impact": 0.30296069383621216,
+        "direction": "positive"
+      },
+      {
+        "feature": "mean_arterial_pressure_last",
+        "attribution": 0.2487,
+        "abs_impact": 0.24867486953735352,
+        "direction": "positive"
+      },
+      {
+        "feature": "heart_rate_trend",
+        "attribution": 0.0926,
+        "abs_impact": 0.09258478134870529,
+        "direction": "positive"
+      },
+      {
+        "feature": "active_med_count",
+        "attribution": 0.0428,
+        "abs_impact": 0.04283429682254791,
+        "direction": "positive"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "diag_diabetes",
+        "attribution": -0.2389,
+        "abs_impact": 0.23892556130886078,
+        "direction": "negative"
+      },
+      {
+        "feature": "diag_heart_failure",
+        "attribution": -0.2237,
+        "abs_impact": 0.2237320840358734,
+        "direction": "negative"
+      },
+      {
+        "feature": "med_diuretics",
+        "attribution": -0.137,
+        "abs_impact": 0.13701851665973663,
+        "direction": "negative"
+      },
+      {
+        "feature": "age",
+        "attribution": -0.0325,
+        "abs_impact": 0.032509252429008484,
+        "direction": "negative"
+      }
+    ]
+  },
+  {
+    "patient_id": "PATIENT-10000014",
+    "analyte": "Hemoglobin",
+    "quadrant": "True Negative",
+    "cas": 0.2304,
+    "band": "LOW",
+    "time_decay_factor": 0.739,
+    "gate_lab_weight": 0.527,
+    "gate_context_weight": 0.473,
+    "cross_modal_synergy": 0.385,
+    "top_positive_factors": [
+      {
+        "feature": "diag_heart_failure",
+        "attribution": 0.0123,
+        "abs_impact": 0.012333870865404606,
+        "direction": "positive"
+      },
+      {
+        "feature": "spo2_last",
+        "attribution": 0.0103,
+        "abs_impact": 0.010348353534936905,
+        "direction": "positive"
+      },
+      {
+        "feature": "recent_min",
+        "attribution": 0.0082,
+        "abs_impact": 0.00818091444671154,
+        "direction": "positive"
+      },
+      {
+        "feature": "recent_mean",
+        "attribution": 0.0078,
+        "abs_impact": 0.0078079234808683395,
+        "direction": "positive"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "heart_rate_trend",
+        "attribution": -0.0162,
+        "abs_impact": 0.016200056299567223,
+        "direction": "negative"
+      },
+      {
+        "feature": "time_since_last_meas_hrs",
+        "attribution": -0.0061,
+        "abs_impact": 0.006113938521593809,
+        "direction": "negative"
+      },
+      {
+        "feature": "temperature_last",
+        "attribution": -0.0055,
+        "abs_impact": 0.005495456513017416,
+        "direction": "negative"
+      },
+      {
+        "feature": "is_male",
+        "attribution": -0.0042,
+        "abs_impact": 0.0041991728357970715,
+        "direction": "negative"
+      }
+    ]
+  },
+  {
+    "patient_id": "PATIENT-10000014",
+    "analyte": "Hemoglobin",
+    "quadrant": "True Negative",
+    "cas": 0.2304,
+    "band": "LOW",
+    "time_decay_factor": 0.739,
+    "gate_lab_weight": 0.527,
+    "gate_context_weight": 0.473,
+    "cross_modal_synergy": 0.385,
+    "top_positive_factors": [
+      {
+        "feature": "diag_heart_failure",
+        "attribution": 0.0123,
+        "abs_impact": 0.012333870865404606,
+        "direction": "positive"
+      },
+      {
+        "feature": "spo2_last",
+        "attribution": 0.0103,
+        "abs_impact": 0.010348353534936905,
+        "direction": "positive"
+      },
+      {
+        "feature": "recent_min",
+        "attribution": 0.0082,
+        "abs_impact": 0.00818091444671154,
+        "direction": "positive"
+      },
+      {
+        "feature": "recent_mean",
+        "attribution": 0.0078,
+        "abs_impact": 0.0078079234808683395,
+        "direction": "positive"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "heart_rate_trend",
+        "attribution": -0.0162,
+        "abs_impact": 0.016200056299567223,
+        "direction": "negative"
+      },
+      {
+        "feature": "time_since_last_meas_hrs",
+        "attribution": -0.0061,
+        "abs_impact": 0.006113938521593809,
+        "direction": "negative"
+      },
+      {
+        "feature": "temperature_last",
+        "attribution": -0.0055,
+        "abs_impact": 0.005495456513017416,
+        "direction": "negative"
+      },
+      {
+        "feature": "is_male",
+        "attribution": -0.0042,
+        "abs_impact": 0.0041991728357970715,
+        "direction": "negative"
+      }
+    ]
+  },
+  {
+    "patient_id": "PATIENT-10000041",
+    "analyte": "Hemoglobin",
+    "quadrant": "False Positive",
+    "cas": 0.8972,
+    "band": "HIGH",
+    "time_decay_factor": 0.741,
+    "gate_lab_weight": 0.571,
+    "gate_context_weight": 0.429,
+    "cross_modal_synergy": 0.479,
+    "top_positive_factors": [
+      {
+        "feature": "time_since_last_meas_hrs",
+        "attribution": 0.1291,
+        "abs_impact": 0.12912733852863312,
+        "direction": "positive"
+      },
+      {
+        "feature": "meas_count",
+        "attribution": 0.069,
+        "abs_impact": 0.06900230795145035,
+        "direction": "positive"
+      },
+      {
+        "feature": "diag_heart_failure",
+        "attribution": 0.0414,
+        "abs_impact": 0.04140527546405792,
+        "direction": "positive"
+      },
+      {
+        "feature": "spo2_last",
+        "attribution": 0.0334,
+        "abs_impact": 0.03335174173116684,
+        "direction": "positive"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "recent_mean",
+        "attribution": -0.179,
+        "abs_impact": 0.17902979254722595,
+        "direction": "negative"
+      },
+      {
+        "feature": "prev_val",
+        "attribution": -0.1692,
+        "abs_impact": 0.1691954880952835,
+        "direction": "negative"
+      },
+      {
+        "feature": "current_prev_val",
+        "attribution": -0.1221,
+        "abs_impact": 0.12205249071121216,
+        "direction": "negative"
+      },
+      {
+        "feature": "recent_max",
+        "attribution": -0.114,
+        "abs_impact": 0.113960862159729,
+        "direction": "negative"
+      }
+    ]
+  },
+  {
+    "patient_id": "PATIENT-10000055",
+    "analyte": "Hemoglobin",
+    "quadrant": "False Positive",
+    "cas": 0.4617,
+    "band": "MEDIUM",
+    "time_decay_factor": 0.737,
+    "gate_lab_weight": 0.548,
+    "gate_context_weight": 0.452,
+    "cross_modal_synergy": 0.452,
+    "top_positive_factors": [
+      {
+        "feature": "time_since_last_meas_hrs",
+        "attribution": 1.9721,
+        "abs_impact": 1.9721475839614868,
+        "direction": "positive"
+      },
+      {
+        "feature": "med_insulin",
+        "attribution": 1.6857,
+        "abs_impact": 1.685677170753479,
+        "direction": "positive"
+      },
+      {
+        "feature": "diag_renal_disease",
+        "attribution": 0.8262,
+        "abs_impact": 0.8261795043945312,
+        "direction": "positive"
+      },
+      {
+        "feature": "meas_count",
+        "attribution": 0.5737,
+        "abs_impact": 0.5736502408981323,
+        "direction": "positive"
+      }
+    ],
+    "top_negative_factors": [
+      {
+        "feature": "recent_mean",
+        "attribution": -2.7744,
+        "abs_impact": 2.7744407653808594,
+        "direction": "negative"
+      },
+      {
+        "feature": "recent_max",
+        "attribution": -2.1317,
+        "abs_impact": 2.1316981315612793,
+        "direction": "negative"
+      },
+      {
+        "feature": "prev_val",
+        "attribution": -2.0638,
+        "abs_impact": 2.0637810230255127,
+        "direction": "negative"
+      },
+      {
+        "feature": "heart_rate_trend",
+        "attribution": -1.5738,
+        "abs_impact": 1.5738494396209717,
+        "direction": "negative"
+      }
+    ]
+  }
+]

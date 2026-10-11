@@ -1,0 +1,278 @@
+[
+  {
+    "quadrant": "True Positive",
+    "patient_id": "PATIENT-10000048",
+    "analyte": "Hemoglobin",
+    "cas_score": 0.9062,
+    "actionability_band": "HIGH",
+    "observed_action": true,
+    "action_type": "medication_modification",
+    "time_to_action_hours": 2.89,
+    "specific_intervention": "Medication: Packed Red Blood Cells (PRBC) (1 Unit)",
+    "target_lab_value": 4.52,
+    "target_lab_unit": "g/dL",
+    "timestamps": {
+      "t_prediction": "2180-05-27 10:30:00",
+      "t_lab": "2180-05-27 11:00:00",
+      "lead_time_min": 30.0,
+      "observation_window_hrs": 12.0
+    },
+    "clinical_context_summary": {
+      "prior_measurements_in_lookback": 5,
+      "monitored_window": "48h Pre-Prediction Lookback"
+    }
+  },
+  {
+    "quadrant": "True Positive",
+    "patient_id": "PATIENT-10000048",
+    "analyte": "Hemoglobin",
+    "cas_score": 0.9029,
+    "actionability_band": "HIGH",
+    "observed_action": true,
+    "action_type": "medication_modification",
+    "time_to_action_hours": 1.44,
+    "specific_intervention": "Medication: Packed Red Blood Cells (PRBC) (1 Unit)",
+    "target_lab_value": 3.88,
+    "target_lab_unit": "g/dL",
+    "timestamps": {
+      "t_prediction": "2180-05-27 23:30:00",
+      "t_lab": "2180-05-28 00:00:00",
+      "lead_time_min": 30.0,
+      "observation_window_hrs": 12.0
+    },
+    "clinical_context_summary": {
+      "prior_measurements_in_lookback": 5,
+      "monitored_window": "48h Pre-Prediction Lookback"
+    }
+  },
+  {
+    "quadrant": "True Positive",
+    "patient_id": "PATIENT-10000041",
+    "analyte": "Hemoglobin",
+    "cas_score": 0.9015,
+    "actionability_band": "HIGH",
+    "observed_action": true,
+    "action_type": "medication_modification",
+    "time_to_action_hours": 3.86,
+    "specific_intervention": "Medication: Packed Red Blood Cells (PRBC) (1 Unit)",
+    "target_lab_value": 5.06,
+    "target_lab_unit": "g/dL",
+    "timestamps": {
+      "t_prediction": "2180-05-23 19:30:00",
+      "t_lab": "2180-05-23 20:00:00",
+      "lead_time_min": 30.0,
+      "observation_window_hrs": 12.0
+    },
+    "clinical_context_summary": {
+      "prior_measurements_in_lookback": 4,
+      "monitored_window": "48h Pre-Prediction Lookback"
+    }
+  },
+  {
+    "quadrant": "True Negative",
+    "patient_id": "PATIENT-10000033",
+    "analyte": "Hemoglobin",
+    "cas_score": 0.23,
+    "actionability_band": "LOW",
+    "observed_action": false,
+    "action_type": "none",
+    "time_to_action_hours": NaN,
+    "specific_intervention": "No qualifying clinical intervention documented within window",
+    "target_lab_value": 10.72,
+    "target_lab_unit": "g/dL",
+    "timestamps": {
+      "t_prediction": "2180-06-20 17:30:00",
+      "t_lab": "2180-06-20 18:00:00",
+      "lead_time_min": 30.0,
+      "observation_window_hrs": 12.0
+    },
+    "clinical_context_summary": {
+      "prior_measurements_in_lookback": 5,
+      "monitored_window": "48h Pre-Prediction Lookback"
+    }
+  },
+  {
+    "quadrant": "True Negative",
+    "patient_id": "PATIENT-10000014",
+    "analyte": "Hemoglobin",
+    "cas_score": 0.2304,
+    "actionability_band": "LOW",
+    "observed_action": false,
+    "action_type": "none",
+    "time_to_action_hours": NaN,
+    "specific_intervention": "No qualifying clinical intervention documented within window",
+    "target_lab_value": 13.21,
+    "target_lab_unit": "g/dL",
+    "timestamps": {
+      "t_prediction": "2180-08-15 07:30:00",
+      "t_lab": "2180-08-15 08:00:00",
+      "lead_time_min": 30.0,
+      "observation_window_hrs": 12.0
+    },
+    "clinical_context_summary": {
+      "prior_measurements_in_lookback": 2,
+      "monitored_window": "48h Pre-Prediction Lookback"
+    }
+  },
+  {
+    "quadrant": "True Negative",
+    "patient_id": "PATIENT-10000014",
+    "analyte": "Hemoglobin",
+    "cas_score": 0.231,
+    "actionability_band": "LOW",
+    "observed_action": false,
+    "action_type": "none",
+    "time_to_action_hours": NaN,
+    "specific_intervention": "No qualifying clinical intervention documented within window",
+    "target_lab_value": 12.54,
+    "target_lab_unit": "g/dL",
+    "timestamps": {
+      "t_prediction": "2180-08-16 22:30:00",
+      "t_lab": "2180-08-16 23:00:00",
+      "lead_time_min": 30.0,
+      "observation_window_hrs": 12.0
+    },
+    "clinical_context_summary": {
+      "prior_measurements_in_lookback": 4,
+      "monitored_window": "48h Pre-Prediction Lookback"
+    }
+  },
+  {
+    "quadrant": "False Positive",
+    "patient_id": "PATIENT-10000041",
+    "analyte": "Hemoglobin",
+    "cas_score": 0.8998,
+    "actionability_band": "HIGH",
+    "observed_action": false,
+    "action_type": "none",
+    "time_to_action_hours": NaN,
+    "specific_intervention": "No qualifying clinical intervention documented within window",
+    "target_lab_value": 5.66,
+    "target_lab_unit": "g/dL",
+    "timestamps": {
+      "t_prediction": "2180-05-27 03:30:00",
+      "t_lab": "2180-05-27 04:00:00",
+      "lead_time_min": 30.0,
+      "observation_window_hrs": 12.0
+    },
+    "clinical_context_summary": {
+      "prior_measurements_in_lookback": 5,
+      "monitored_window": "48h Pre-Prediction Lookback"
+    }
+  },
+  {
+    "quadrant": "False Positive",
+    "patient_id": "PATIENT-10000055",
+    "analyte": "Hemoglobin",
+    "cas_score": 0.8915,
+    "actionability_band": "HIGH",
+    "observed_action": false,
+    "action_type": "none",
+    "time_to_action_hours": NaN,
+    "specific_intervention": "No qualifying clinical intervention documented within window",
+    "target_lab_value": 7.88,
+    "target_lab_unit": "g/dL",
+    "timestamps": {
+      "t_prediction": "2180-10-19 18:30:00",
+      "t_lab": "2180-10-19 19:00:00",
+      "lead_time_min": 30.0,
+      "observation_window_hrs": 12.0
+    },
+    "clinical_context_summary": {
+      "prior_measurements_in_lookback": 5,
+      "monitored_window": "48h Pre-Prediction Lookback"
+    }
+  },
+  {
+    "quadrant": "False Positive",
+    "patient_id": "PATIENT-10000048",
+    "analyte": "Hemoglobin",
+    "cas_score": 0.8913,
+    "actionability_band": "HIGH",
+    "observed_action": false,
+    "action_type": "none",
+    "time_to_action_hours": NaN,
+    "specific_intervention": "No qualifying clinical intervention documented within window",
+    "target_lab_value": 3.84,
+    "target_lab_unit": "g/dL",
+    "timestamps": {
+      "t_prediction": "2180-05-28 16:30:00",
+      "t_lab": "2180-05-28 17:00:00",
+      "lead_time_min": 30.0,
+      "observation_window_hrs": 12.0
+    },
+    "clinical_context_summary": {
+      "prior_measurements_in_lookback": 4,
+      "monitored_window": "48h Pre-Prediction Lookback"
+    }
+  },
+  {
+    "quadrant": "False Negative",
+    "patient_id": "PATIENT-10000033",
+    "analyte": "Glucose",
+    "cas_score": 0.2327,
+    "actionability_band": "LOW",
+    "observed_action": true,
+    "action_type": "urgent_repeat_lab",
+    "time_to_action_hours": 6.0,
+    "specific_intervention": "Urgent repeat Glucose ordered within 6.0h",
+    "target_lab_value": 131.99,
+    "target_lab_unit": "mg/dL",
+    "timestamps": {
+      "t_prediction": "2180-06-20 16:30:00",
+      "t_lab": "2180-06-20 17:00:00",
+      "lead_time_min": 30.0,
+      "observation_window_hrs": 12.0
+    },
+    "clinical_context_summary": {
+      "prior_measurements_in_lookback": 4,
+      "monitored_window": "48h Pre-Prediction Lookback"
+    }
+  },
+  {
+    "quadrant": "False Negative",
+    "patient_id": "PATIENT-10000035",
+    "analyte": "Glucose",
+    "cas_score": 0.2401,
+    "actionability_band": "LOW",
+    "observed_action": true,
+    "action_type": "urgent_repeat_lab",
+    "time_to_action_hours": 6.0,
+    "specific_intervention": "Urgent repeat Glucose ordered within 6.0h",
+    "target_lab_value": 120.63,
+    "target_lab_unit": "mg/dL",
+    "timestamps": {
+      "t_prediction": "2180-08-27 18:30:00",
+      "t_lab": "2180-08-27 19:00:00",
+      "lead_time_min": 30.0,
+      "observation_window_hrs": 12.0
+    },
+    "clinical_context_summary": {
+      "prior_measurements_in_lookback": 3,
+      "monitored_window": "48h Pre-Prediction Lookback"
+    }
+  },
+  {
+    "quadrant": "False Negative",
+    "patient_id": "PATIENT-10000005",
+    "analyte": "Glucose",
+    "cas_score": 0.2425,
+    "actionability_band": "LOW",
+    "observed_action": true,
+    "action_type": "urgent_repeat_lab",
+    "time_to_action_hours": 6.0,
+    "specific_intervention": "Urgent repeat Glucose ordered within 6.0h",
+    "target_lab_value": 130.4,
+    "target_lab_unit": "mg/dL",
+    "timestamps": {
+      "t_prediction": "2180-05-12 12:30:00",
+      "t_lab": "2180-05-12 13:00:00",
+      "lead_time_min": 30.0,
+      "observation_window_hrs": 12.0
+    },
+    "clinical_context_summary": {
+      "prior_measurements_in_lookback": 3,
+      "monitored_window": "48h Pre-Prediction Lookback"
+    }
+  }
+]

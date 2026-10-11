@@ -1,0 +1,35 @@
+# CAS (Clinical Actionability Score) Research Thresholds & Bands
+# Note: These are research-model operational thresholds for retrospective stratification, NOT clinically validated rules.
+
+bands:
+  low:
+    name: "Low Actionability"
+    range: [0.0, 0.40]
+    description: "Low model-estimated probability of qualifying downstream clinical action within post-test window"
+    color: "#059669" # Emerald/Green
+    suggested_monitoring: "Routine interval monitoring per standard ICU protocol"
+
+  medium:
+    name: "Moderate Actionability"
+    range: [0.40, 0.75]
+    description: "Moderate model-estimated probability of qualifying downstream clinical action"
+    color: "#d97706" # Amber
+    suggested_monitoring: "Heightened surveillance; review underlying organ trajectory"
+
+  high:
+    name: "High Actionability"
+    range: [0.75, 1.0]
+    description: "High model-estimated probability of qualifying downstream clinical action"
+    color: "#dc2626" # Crimson/Red
+    suggested_monitoring: "Anticipate therapeutic modification; prepare relevant clinical protocols"
+
+decision_analysis:
+  default_binary_threshold: 0.50
+  optimal_f1_threshold: 0.46
+  high_sensitivity_threshold: 0.35 # Prioritize detecting true clinical actions
+  high_specificity_threshold: 0.65 # Prioritize precision before action alerts
+
+calibration:
+  method: "isotonic" # Options: platt, isotonic, none
+  num_bins: 10
+  strategy: "quantile"

@@ -1,0 +1,208 @@
+# MIMIC-IV Laboratory Analyte Item Mappings and Clinical Action Specifications
+# Target Analytes: Glucose, Creatinine, Potassium, Sodium, Hemoglobin
+
+analytes:
+  glucose:
+    name: "Glucose"
+    canonical_unit: "mg/dL"
+    normal_range: [70.0, 99.0]
+    critical_low: 50.0
+    critical_high: 400.0
+    mimic_item_ids:
+      - itemid: 50931
+        label: "Glucose"
+        fluid: "Blood"
+        category: "Chemistry"
+        unit: "mg/dL"
+      - itemid: 50809
+        label: "Glucose"
+        fluid: "Blood"
+        category: "Blood Gas"
+        unit: "mg/dL"
+      - itemid: 52569
+        label: "Glucose"
+        fluid: "Blood"
+        category: "Chemistry"
+        unit: "mg/dL"
+    conversions:
+      "mmol/L":
+        factor: 18.0182
+        direction: "multiply"
+    associated_action_classes:
+      medications:
+        - "Insulin Regular"
+        - "Insulin Glargine"
+        - "Insulin Aspart"
+        - "Insulin Lispro"
+        - "Dextrose 50%"
+        - "Dextrose 10%"
+        - "Glucagon"
+        - "Metformin"
+        - "Glipizide"
+      orders:
+        - "Fingerstick Glucose Q1H"
+        - "Insulin Infusion Protocol Titration"
+        - "Hypoglycemia Protocol"
+
+  creatinine:
+    name: "Creatinine"
+    canonical_unit: "mg/dL"
+    normal_range: [0.6, 1.2]
+    critical_low: 0.2
+    critical_high: 5.0
+    mimic_item_ids:
+      - itemid: 50912
+        label: "Creatinine"
+        fluid: "Blood"
+        category: "Chemistry"
+        unit: "mg/dL"
+      - itemid: 52546
+        label: "Creatinine"
+        fluid: "Blood"
+        category: "Chemistry"
+        unit: "mg/dL"
+    conversions:
+      "umol/L":
+        factor: 0.011312
+        direction: "multiply"
+    associated_action_classes:
+      medications:
+        - "Furosemide"
+        - "Bumetanide"
+        - "Torsemide"
+        - "Vancomycin" # Dose adjustment / level check
+        - "Gentamicin"
+        - "Sodium Bicarbonate"
+      orders:
+        - "Renal Replacement Therapy (CRRT/HD) Consult"
+        - "Nephrology Consult"
+        - "Fluid Bolus 500mL Crystalloid"
+        - "Hold Nephrotoxic Agents"
+        - "Strict Intake & Output Monitoring"
+
+  potassium:
+    name: "Potassium"
+    canonical_unit: "mEq/L"
+    normal_range: [3.5, 5.0]
+    critical_low: 2.8
+    critical_high: 6.2
+    mimic_item_ids:
+      - itemid: 50971
+        label: "Potassium"
+        fluid: "Blood"
+        category: "Chemistry"
+        unit: "mEq/L"
+      - itemid: 50822
+        label: "Potassium, Whole Blood"
+        fluid: "Blood"
+        category: "Blood Gas"
+        unit: "mEq/L"
+      - itemid: 52610
+        label: "Potassium"
+        fluid: "Blood"
+        category: "Chemistry"
+        unit: "mEq/L"
+    conversions:
+      "mmol/L":
+        factor: 1.0
+        direction: "multiply"
+    associated_action_classes:
+      medications:
+        - "Potassium Chloride IV"
+        - "Potassium Chloride Oral"
+        - "Sodium Polystyrene Sulfonate (Kayexalate)"
+        - "Patiromer"
+        - "Sodium Zirconium Cyclosilicate (Lokelma)"
+        - "Calcium Gluconate"
+        - "Regular Insulin + D50W"
+        - "Albuterol Nebulizer"
+        - "Furosemide"
+      orders:
+        - "12-Lead ECG"
+        - "Urgent Repeat Potassium in 2h"
+        - "Continuous Cardiac Telemetry Alert"
+
+  sodium:
+    name: "Sodium"
+    canonical_unit: "mEq/L"
+    normal_range: [136.0, 145.0]
+    critical_low: 120.0
+    critical_high: 155.0
+    mimic_item_ids:
+      - itemid: 50983
+        label: "Sodium"
+        fluid: "Blood"
+        category: "Chemistry"
+        unit: "mEq/L"
+      - itemid: 50824
+        label: "Sodium, Whole Blood"
+        fluid: "Blood"
+        category: "Blood Gas"
+        unit: "mEq/L"
+      - itemid: 52623
+        label: "Sodium"
+        fluid: "Blood"
+        category: "Chemistry"
+        unit: "mEq/L"
+    conversions:
+      "mmol/L":
+        factor: 1.0
+        direction: "multiply"
+    associated_action_classes:
+      medications:
+        - "Sodium Chloride 0.9% IV"
+        - "Sodium Chloride 3% Hypertonic IV"
+        - "Sodium Chloride 0.45% IV"
+        - "Dextrose 5% in Water (D5W)"
+        - "Tolvaptan"
+        - "Desmopressin (DDAVP)"
+      orders:
+        - "Fluid Restriction 1000mL/day"
+        - "Serum Osmolality Test"
+        - "Urine Sodium & Osmolality"
+        - "Strict Neuro Checks Q2H"
+
+  hemoglobin:
+    name: "Hemoglobin"
+    canonical_unit: "g/dL"
+    normal_range: [12.0, 16.0]
+    critical_low: 7.0
+    critical_high: 18.0
+    mimic_item_ids:
+      - itemid: 51222
+        label: "Hemoglobin"
+        fluid: "Blood"
+        category: "Hematology"
+        unit: "g/dL"
+      - itemid: 50811
+        label: "Hemoglobin"
+        fluid: "Blood"
+        category: "Blood Gas"
+        unit: "g/dL"
+      - itemid: 51221
+        label: "Hematocrit"
+        fluid: "Blood"
+        category: "Hematology"
+        unit: "%"
+    conversions:
+      "g/L":
+        factor: 0.1
+        direction: "multiply"
+      "mmol/L":
+        factor: 1.611
+        direction: "multiply"
+    associated_action_classes:
+      medications:
+        - "Packed Red Blood Cells (PRBC)"
+        - "Fresh Frozen Plasma (FFP)"
+        - "Platelets"
+        - "Cryoprecipitate"
+        - "Iron Dextran / Sucrose"
+        - "Erythropoietin"
+        - "Vitamin K"
+        - "Tranexamic Acid"
+      orders:
+        - "Type and Screen / Crossmatch"
+        - "Gastroenterology Endoscopy Consult"
+        - "Hold Anticoagulation (Heparin / Enoxaparin / Warfarin)"
+        - "Orthostatic Vitals & CBC Q6H"

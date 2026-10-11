@@ -1,0 +1,14 @@
+itemid,label,fluid,category,loinc_code
+50931,Glucose,Blood,Chemistry,2345-7
+50809,Glucose,Blood,Blood Gas,2339-0
+52569,Glucose,Blood,Chemistry,2345-7
+50912,Creatinine,Blood,Chemistry,2160-0
+52546,Creatinine,Blood,Chemistry,2160-0
+50971,Potassium,Blood,Chemistry,2823-3
+50822,"Potassium, Whole Blood",Blood,Blood Gas,2823-3
+52610,Potassium,Blood,Chemistry,2823-3
+50983,Sodium,Blood,Chemistry,2951-2
+50824,"Sodium, Whole Blood",Blood,Blood Gas,2951-2
+52623,Sodium,Blood,Chemistry,2951-2
+51222,Hemoglobin,Blood,Hematology,718-7
+50811,Hemoglobin,Blood,Blood Gas,718-7

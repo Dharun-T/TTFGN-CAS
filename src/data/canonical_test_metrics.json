@@ -1,0 +1,208 @@
+{
+  "metadata": {
+    "generated_at": "2026-10-11T05:23:24.776479",
+    "evaluation_cohort": "MIMIC-IV Adult ICU Held-Out Test Set",
+    "test_sample_size": 504,
+    "test_positives": 73,
+    "test_negatives": 431,
+    "positive_prevalence": 0.1448,
+    "threshold": 0.5,
+    "verification_status": "MATHEMATICALLY_VERIFIED_FROM_RAW_TEST_ARRAYS"
+  },
+  "models": {
+    "T-TFGN (Proposed)": {
+      "role": "Proposed Multimodal Research Model",
+      "roc_auc": 0.5034,
+      "roc_auc_ci": [
+        0.435,
+        0.581
+      ],
+      "pr_auc": 0.1616,
+      "pr_auc_ci": [
+        0.124,
+        0.23
+      ],
+      "f1_score": 0.1935,
+      "f1_score_ci": [
+        0.13,
+        0.264
+      ],
+      "brier_score": 0.2376,
+      "ece": 0.3303,
+      "accuracy": 0.6528,
+      "recall": 0.2877,
+      "precision": 0.1458,
+      "specificity": 0.7146,
+      "confusion_matrix": {
+        "tp": 21,
+        "fp": 123,
+        "tn": 308,
+        "fn": 52
+      },
+      "raw_predictions_verified": true
+    },
+    "Random Forest (Lab-Only)": {
+      "role": "Unimodal Baseline",
+      "roc_auc": 0.5648,
+      "roc_auc_ci": [
+        0.494,
+        0.636
+      ],
+      "pr_auc": 0.196,
+      "pr_auc_ci": [
+        0.141,
+        0.272
+      ],
+      "f1_score": 0.1404,
+      "f1_score_ci": [
+        0.057,
+        0.234
+      ],
+      "brier_score": 0.1783,
+      "ece": 0.2156,
+      "accuracy": 0.8056,
+      "recall": 0.1096,
+      "precision": 0.1951,
+      "specificity": 0.9234
+    },
+    "Gradient Boosting (XGBoost)": {
+      "role": "Ensemble Baseline",
+      "roc_auc": 0.5424,
+      "roc_auc_ci": [
+        0.465,
+        0.617
+      ],
+      "pr_auc": 0.1833,
+      "pr_auc_ci": [
+        0.136,
+        0.263
+      ],
+      "f1_score": 0.0,
+      "f1_score_ci": [
+        0.0,
+        0.0
+      ],
+      "brier_score": 0.1241,
+      "ece": 0.0192,
+      "accuracy": 0.8492,
+      "recall": 0.0,
+      "precision": 0.0,
+      "specificity": 0.993
+    },
+    "Random Forest": {
+      "role": "Tree Ensemble Baseline",
+      "roc_auc": 0.5288,
+      "roc_auc_ci": [
+        0.454,
+        0.598
+      ],
+      "pr_auc": 0.1753,
+      "pr_auc_ci": [
+        0.133,
+        0.251
+      ],
+      "f1_score": 0.0488,
+      "f1_score_ci": [
+        0.0,
+        0.118
+      ],
+      "brier_score": 0.1265,
+      "ece": 0.0248,
+      "accuracy": 0.8452,
+      "recall": 0.0274,
+      "precision": 0.2222,
+      "specificity": 0.9838
+    },
+    "Logistic Regression": {
+      "role": "Linear Baseline",
+      "roc_auc": 0.528,
+      "roc_auc_ci": [
+        0.448,
+        0.604
+      ],
+      "pr_auc": 0.1534,
+      "pr_auc_ci": [
+        0.12,
+        0.207
+      ],
+      "f1_score": 0.0,
+      "f1_score_ci": [
+        0.0,
+        0.0
+      ],
+      "brier_score": 0.1276,
+      "ece": 0.0237,
+      "accuracy": 0.8532,
+      "recall": 0.0,
+      "precision": 0.0,
+      "specificity": 0.9977
+    }
+  },
+  "calibration_deciles": [
+    {
+      "bin": "0.2-0.3",
+      "count": 14,
+      "avg_confidence": 0.2767,
+      "empirical_accuracy": 0.0714,
+      "bin_error": 0.2053
+    },
+    {
+      "bin": "0.3-0.4",
+      "count": 43,
+      "avg_confidence": 0.3617,
+      "empirical_accuracy": 0.1628,
+      "bin_error": 0.1989
+    },
+    {
+      "bin": "0.4-0.5",
+      "count": 303,
+      "avg_confidence": 0.463,
+      "empirical_accuracy": 0.1452,
+      "bin_error": 0.3178
+    },
+    {
+      "bin": "0.5-0.6",
+      "count": 125,
+      "avg_confidence": 0.5226,
+      "empirical_accuracy": 0.128,
+      "bin_error": 0.3946
+    },
+    {
+      "bin": "0.6-0.7",
+      "count": 6,
+      "avg_confidence": 0.6366,
+      "empirical_accuracy": 0.3333,
+      "bin_error": 0.3032
+    },
+    {
+      "bin": "0.7-0.8",
+      "count": 5,
+      "avg_confidence": 0.7455,
+      "empirical_accuracy": 0.2,
+      "bin_error": 0.5455
+    },
+    {
+      "bin": "0.8-0.9",
+      "count": 8,
+      "avg_confidence": 0.8593,
+      "empirical_accuracy": 0.25,
+      "bin_error": 0.6093
+    }
+  ],
+  "discrepancy_audit": {
+    "previous_frontend_claims": {
+      "T-TFGN ROC-AUC": 0.5842,
+      "T-TFGN PR-AUC": 0.2418,
+      "T-TFGN Accuracy": 0.7812,
+      "T-TFGN ECE": 0.1142,
+      "Status": "INCORRECT / FABRICATED IN PREVIOUS FRONTEND"
+    },
+    "true_evaluated_metrics": {
+      "T-TFGN ROC-AUC": 0.5034,
+      "T-TFGN PR-AUC": 0.1616,
+      "T-TFGN Accuracy": 0.6528,
+      "T-TFGN ECE": 0.3303,
+      "Status": "REPRODUCED AND MATHEMATICALLY VERIFIED"
+    }
+  }
+}
